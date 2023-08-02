@@ -153,5 +153,5 @@ class MDP:
                 # Minimum changes are kept track of.
                 absoluteChange = abs(UPrime[state])
                 if absoluteChange < changes:
-                    changes = absoluteChange
+                    changes = changes - absoluteChange
             self.U = UPrime
